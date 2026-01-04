@@ -62,11 +62,11 @@ const finishSelectLevel = () => {
         return 
     }
     level.style.display = 'none';
-    startGame();
+    startGame(levelType, categoryType);
 }
 
-categoryRow.forEach((element, key) => {
-    element.addEventListener('click', (key) => handlerCategory(key))
+categoryRow.forEach((element, index) => {
+    element.addEventListener('click', (key) => handlerCategory(index))
 })
 
 levelRow.forEach((element, key) => {
