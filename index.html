@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style/font.css">
-    <link rel="stylesheet" href="style/root.css">
-    <link rel="stylesheet" href="style/index.css">
-
-
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style/font.css" />
+    <link rel="stylesheet" href="style/root.css" />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
     <div class="header">
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#top">Top Players</a></li>
-                <li><img src="assets/logo.svg" alt=""></li>
-            </ul>
-        </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#top">Top Players</a></li>
+          <li><img src="assets/logo.svg" alt="" /></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="hero" id = 'hero'>
-        <h1>Welcome to Quiz Game</h1>
-        <h3>The Enjoyed Game.</h3>
-        <button>Start Game</button>
-        <img src="assets/logo.svg" alt="" srcset="">        
+    <div class="hero" id="hero">
+      <h1>Welcome to Quiz Game</h1>
+      <h3>The Enjoyed Game.</h3>
+      <button>Start Game</button>
+      <img src="assets/logo.svg" alt="" srcset="" />
     </div>
 
-    <div class="top-players" id = 'top'>
-        <h2>Top players</h2>
-        <div class="row-player">
-            <span>1</span>
-            <p>Amir Hosseini</p>
-            <span>5 Score</span>
-        </div>
+    <div class="top-players" id="top">
+      <h2>Top players</h2>
+      <div class="row-player">
+        <span>1</span>
+        <p>Amir Hosseini</p>
+        <span>5 Score</span>
+      </div>
 
-        <div class="row-player">
-            <span>1</span>
-            <p>Amir Hosseini</p>
-            <span>5</span>
-        </div>
+      <div class="row-player">
+        <span>1</span>
+        <p>Amir Hosseini</p>
+        <span>5 Score</span>
+      </div>
 
-        <div class="row-player">
-            <span>1</span>
-            <p>Amir Hosseini</p>
-            <span>5</span>
-        </div>
+      <div class="row-player">
+        <span>1</span>
+        <p>Amir Hosseini</p>
+        <span>2 Score</span>
+      </div>
     </div>
 
-</body>
+    <div class="arrow-circle">
+        <span>Up</span>
+    </div>
+
+    <footer>
+        <h5>All right by seyed.</h5>
+    </footer>
+  </body>
+
+  <script>
+        const arrow = document.querySelector('.arrow-circle');
+
+        window.addEventListener('scroll', () => {
+            console.log(window)
+            if (window.scrollY > 1) {
+            arrow.classList.add('show');
+            } else {
+            arrow.classList.remove('show');
+            }
+        });
+
+        arrow.addEventListener('click', () => {
+            window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+        });
+    </script>
+
 </html>

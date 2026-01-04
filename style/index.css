@@ -1,105 +1,103 @@
+
 .navbar {
+   position: sticky;
+  top: 20px;
+  z-index: 9999;
   max-width: 1300px;
+  width: 400px;
+  height: 60px;
+  margin: 20px auto;
   background-color: #1e1d1d;
-    width: 400px;
-    height: 60px;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 20px;
-    list-style-type: none;
-    backdrop-filter: blur(50px);
+  border-radius: 20px;
+  list-style-type: none;
+  backdrop-filter: blur(50px);
 }
 
 .navbar ul {
-    display: flex;
-    margin: 0 auto;
-    list-style-type: none;
-    justify-content: space-evenly;
-    align-items: center;    
-    padding: 5px 10px;
-    font-size: 15px;
+  display: flex;
+  margin: 0 auto;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 15px;
 }
 
 .navbar li {
-    opacity: 1;
-    transition: all 0.3s ease-in;
+  opacity: 1;
+  transition: all 0.3s ease-in;
 }
 
 .navbar li img {
-    width: 32px;
-    margin-left: 25px;
+  width: 32px;
+  margin-left: 25px;
 }
 
 .navbar ul:hover li {
-    filter: blur(1px);
-    opacity: 0.5;
+  filter: blur(1px);
+  opacity: 0.5;
 }
 
 .navbar ul li:hover {
-    filter: blur(0);
-    opacity: 1;
-    cursor: pointer;
-    color: rgb(197, 144, 247);
+  filter: blur(0);
+  opacity: 1;
+  cursor: pointer;
+  color: rgb(197, 144, 247);
 }
 
 .hero {
   max-width: 1300px;
-
+  position: relative;
   margin-left: 100px;
   margin-top: 150px;
+  
 }
 
-
 .hero h1 {
-    color: rgb(162, 83, 236);
-    font-size: 40px;
-    margin-top: 200px;
-    animation: myAnimation 2s ease-in-out infinite alternate;
+  color: rgb(162, 83, 236);
+  font-size: 40px;
+  margin-top: 200px;
+  animation: myAnimation 2s ease-in-out infinite alternate;
 }
 
 .hero h3 {
-    color: rgb(197, 144, 247);
-    font-size: 15px;
+  color: rgb(197, 144, 247);
+  font-size: 15px;
 
-    display: inline-block;
-    margin-left: 5px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .hero img {
-    position: absolute;
-    margin-left: 500px;
-    width: 250px;
-    margin-top: -180px;
-    animation: logoanimation 2s ease-in-out infinite alternate;
-    filter: blur(100%);
-
-
+  position: absolute;
+  margin-left: 500px;
+  width: 250px;
+  margin-top: -180px;
+  animation: logoanimation 2s ease-in-out infinite alternate;
+  filter: blur(100%);
 }
 
-
-
 .hero button {
-    border: none; 
-    width: 200px;
-    height: 40px;
-    margin-top: 15px;
-    margin-left: 15px;
-    background-color: rgb(146, 24, 202);
-    color: #ffffff;
-    border-radius: 20px;
-    font-family: 'Urbanist-Medium', sans-serif;
-    font-weight: 200;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    
+  border: none;
+  width: 200px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: rgb(146, 24, 202);
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: "Urbanist-Medium", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  transition: all 0.3s ease;
 }
 
 .hero button:hover {
-    backdrop-filter: blur(100px);
-    cursor: pointer;
-    opacity: 0.3;
-    color: #262626;
-    transform: scale(1.1);
+  backdrop-filter: blur(100px);
+  cursor: pointer;
+  opacity: 0.3;
+  color: #262626;
+  transform: scale(1.1);
 }
 
 @keyframes myAnimation {
@@ -108,7 +106,6 @@
   }
   to {
     opacity: 1;
-
   }
 }
 
@@ -118,20 +115,18 @@
   }
   to {
     transform: scale(0.9);
-
   }
 }
 
 .top-players {
   max-width: 1300px;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   margin: 200px auto 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 
 .top-players h2 {
   color: rgb(197, 144, 247);
@@ -151,7 +146,7 @@
   padding: 0 20px;
 }
 
-.row-player span:first-child{
+.row-player span:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,18 +158,20 @@
   text-align: center;
 }
 
-.row-player span:last-child{
+.row-player span:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 24px;
+  width: 80px;
+  height: 30px;
   border-radius: 5px;
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(19, 16, 16);
   text-align: center;
+  font-size: 15px;
+  font-family: 'Urbanist-ExtraBold', sans-serif;
 }
 
-.row-player p{
+.row-player p {
   margin-right: 120px;
 }
 
@@ -187,22 +184,18 @@
   gap: 20px;
 }
 
-
 .About-Me h2 {
   color: rgb(197, 144, 247);
   text-align: center;
 }
 
-
 @media (max-width: 481px) {
-.navbar {
-
+  .navbar {
     width: 380px;
-}
+  }
   .hero {
     margin-top: 0;
-  margin-left: 0;
-
+    margin-left: 0;
 
     display: flex;
     flex-direction: column;
@@ -234,7 +227,69 @@
     width: 330px;
   }
 
-  .row-player p{
+  .row-player p {
     margin-right: 40px;
   }
 }
+
+
+footer {
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1d1d;
+  height: 40px;
+  width: 100vw;
+  text-align: center;
+}
+
+footer h5 {
+   font-size: 12px;
+   font-weight: 100px;
+  font-family: 'Urbanist-Medium', sans-serif;
+
+}
+
+
+
+.arrow-circle {
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: rgb(31, 26, 34);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 9999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-circle.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.arrow-circle.show:hover {
+  background-color: rgb(134, 59, 177);
+
+}
+
+/* 
+* {
+  outline: 1px solid red;
+} */
