@@ -1,3 +1,5 @@
+import { startGame } from './game.js';
+
 const categoryRow = document.querySelectorAll('.row-category')
 const categoryButton = document.querySelector('.category-button')
 const category = document.querySelector('.selectCateg')
@@ -5,10 +7,18 @@ const category = document.querySelector('.selectCateg')
 const levelRow = document.querySelectorAll('.row-level')
 const levelButton = document.querySelector('.level-button')
 const level = document.querySelector('.selectLevel')
+const spinerLoader = document.querySelector('.page-loader')
+
 
 let categoryType = 0;
 let levelType = '';
-
+export const toggleLoader = (state) => {
+    if (state == true) {
+        spinerLoader.style.display = 'grid'
+    } else {
+        spinerLoader.style.display = 'none'
+    }
+}
 
 const removeSelectorCategory = (key) => {
     categoryRow.forEach((element, key) => {
@@ -29,9 +39,8 @@ const finishSelectCategory = () => {
         return 
     }
     category.style.display = 'none';
+    level.style.display = 'flex';
 }
-
-
 
 const removeSelectorLevel = (key) => {
     levelRow.forEach((element, key) => {
@@ -53,6 +62,7 @@ const finishSelectLevel = () => {
         return 
     }
     level.style.display = 'none';
+    startGame();
 }
 
 categoryRow.forEach((element, key) => {
@@ -65,3 +75,5 @@ levelRow.forEach((element, key) => {
 
 categoryButton.addEventListener('click', finishSelectCategory)
 levelButton.addEventListener('click', finishSelectLevel)
+
+

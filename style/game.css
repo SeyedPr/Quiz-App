@@ -1,5 +1,5 @@
 body {
-    max-width: 1300px;
+  max-width: 1300px;
 }
 
 .selectCateg {
@@ -8,27 +8,23 @@ body {
   align-items: center;
   margin-top: 150px;
   gap: 20px;
-  display: none;
 }
-
 
 .selectCateg button {
-    width: 380px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #bb47df;
-    border: none;
-    transition: all 0.2s ease-in;
-    color: #ffffff;
-    opacity: 0.5;
+  width: 380px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #bb47df;
+  border: none;
+  transition: all 0.2s ease-in;
+  color: #ffffff;
+  opacity: 0.5;
 }
-
 
 .selectCateg button:hover {
-    cursor: pointer;
-    background-color: #bc47df8a;
+  cursor: pointer;
+  background-color: #bc47df8a;
 }
-
 
 .selectCateg h1 {
   font-size: 15px;
@@ -36,83 +32,73 @@ body {
   color: #ceb6e2;
 }
 
-
 .category {
-    background-color: #1d1d1d80;
-    height: 300px;
-    display: flex;
-    border-radius: 20px;
-    width: 400px;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  background-color: #1d1d1d80;
+  height: 300px;
+  display: flex;
+  border-radius: 20px;
+  width: 400px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .row-category {
-    opacity: 0.5;
-    width: 380px;
-    height: 50px;
-    background-color: #262626;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 17px 15px;
-    color: #ffffff;
+  opacity: 0.5;
+  width: 380px;
+  height: 50px;
+  background-color: #262626;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 17px 15px;
+  color: #ffffff;
 
-    transition: 
-      opacity 0.2s ease,
-      transform 0.25s ease,
-      background-color 0.25s ease,
-      border 0.25s ease;
+  transition: opacity 0.2s ease, transform 0.25s ease,
+    background-color 0.25s ease, border 0.25s ease;
 }
 
 .selectedCategory {
-    opacity: 1;
-    background-color: #2626263a;
-    border: 1px solid #7138a0;
-    cursor: pointer;
-    transform: scale(1.02);
+  opacity: 1;
+  background-color: #2626263a;
+  border: 1px solid #7138a0;
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .row-category:hover {
-    opacity: 1;
-    background-color: #2626263a;
-    border: 1px solid #7138a0;
-    cursor: pointer;
-    transform: scale(1.02);
+  opacity: 1;
+  background-color: #2626263a;
+  border: 1px solid #7138a0;
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
-
 /* select level css */
-
-
-
 .selectLevel {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 150px;
   gap: 20px;
+  display: none;
 }
-
 
 .selectLevel button {
-    width: 380px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #bb47df;
-    border: none;
-    transition: all 0.2s ease-in;
-    color: #ffffff;
-    opacity: 0.5;
+  width: 380px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #bb47df;
+  border: none;
+  transition: all 0.2s ease-in;
+  color: #ffffff;
+  opacity: 0.5;
 }
-
 
 .selectLevel button:hover {
-    cursor: pointer;
-    background-color: #bc47df8a;
+  cursor: pointer;
+  background-color: #bc47df8a;
 }
-
 
 .selectLevel h1 {
   font-size: 15px;
@@ -120,48 +106,188 @@ body {
   color: #ceb6e2;
 }
 
-
 .level {
-    background-color: #1d1d1d80;
-    height: 250px;
-    display: flex;
-    border-radius: 20px;
-    width: 400px;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+  background-color: #1d1d1d80;
+  height: 250px;
+  display: flex;
+  border-radius: 20px;
+  width: 400px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .row-level {
-    opacity: 0.5;
-    width: 380px;
-    height: 50px;
-    background-color: #262626;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 17px 15px;
-    color: #ffffff;
+  opacity: 0.5;
+  width: 380px;
+  height: 50px;
+  background-color: #262626;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 17px 15px;
+  color: #ffffff;
 
-    transition: 
-      opacity 0.2s ease,
-      transform 0.25s ease,
-      background-color 0.25s ease,
-      border 0.25s ease;
+  transition: opacity 0.2s ease, transform 0.25s ease,
+    background-color 0.25s ease, border 0.25s ease;
 }
 
 .selectedCategory {
-    opacity: 1;
-    background-color: #2626263a;
-    border: 1px solid #7138a0;
-    cursor: pointer;
-    transform: scale(1.02);
+  opacity: 1;
+  background-color: #2626263a;
+  border: 1px solid #7138a0;
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .row-level:hover {
-    opacity: 1;
-    background-color: #2626263a;
-    border: 1px solid #7138a0;
-    cursor: pointer;
-    transform: scale(1.02);
+  opacity: 1;
+  background-color: #2626263a;
+  border: 1px solid #7138a0;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+/* Anwser Box */
+
+.anwser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+  display: none;
+}
+
+.anwser-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.anwser button {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #5e56d3;
+  color: #ffffff;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease, transform 0.25s ease,
+    background-color 0.25s ease, border 0.25s ease;
+}
+
+.anwser button:first-child {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #5e56d3;
+  background-color: #26262600;
+}
+
+.anwser button:first-child:hover {
+  background-color: #5e56d3;
+}
+
+.anwser button:last-child:hover {
+  border: 1px solid #5e56d3;
+  background-color: #26262600;
+}
+
+.anwser-box {
+  background-color: #1d1d1d80;
+  height: 330px;
+  display: flex;
+  border-radius: 20px;
+  width: 580px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.anwser-information {
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+}
+
+.anwser-information .score,
+.anwser-information .progress {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.anwser-information .question {
+  position: relative;
+  top: 70px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+}
+
+.anwser-test:first-child {
+  margin-top: 60px;
+}
+
+.anwser-test {
+  opacity: 0.5;
+  width: 560px;
+  height: 50px;
+  background-color: #262626;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 15px 15px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: opacity 0.2s ease, transform 0.25s ease,
+    background-color 0.25s ease, border 0.5s ease;
+}
+
+.anwser-test:hover {
+  opacity: 1;
+  border-radius: 20px;
+  border: 1px solid #5e56d3;
+  background-color: #26262600;
+}
+
+.progress-anwser {
+  position: relative;
+  top: -30px;
+  opacity: 1;
+  width: 580px;
+  height: 15px;
+  background-color: #5e56d3;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  color: #ffffff;
+  transition: opacity 0.2s ease, transform 0.25s ease,
+    background-color 0.25s ease, border 0.25s ease;
+}
+
+
+.page-loader{
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: rgba(0,0,0,0.35);
+  z-index: 9999;
+}
+
+.loader{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 6px solid rgba(255,255,255,0.1);
+  border-top-color: #8c00ff;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin{
+  to { transform: rotate(360deg); }
 }
