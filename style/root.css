@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+    max-width: 1300px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +17,7 @@ body {
     background-color: #141414;
     background-image: url('../assets/background.svg');
     background-repeat: repeat-x;
-    background-size: auto 900px;
+    background-size: auto;
     background-position: auto center;
 
     font-family: 'Urbanist-ExtraBold', sans-serif;
@@ -27,4 +33,10 @@ body {
   to {
     background-position-x: 100%;
   }
+}
+
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
