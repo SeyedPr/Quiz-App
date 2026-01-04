@@ -22,7 +22,7 @@
     <div class="hero" id="hero">
       <h1>Welcome to Quiz Game</h1>
       <h3>The Enjoyed Game.</h3>
-      <button>Start Game</button>
+      <button id="startButton">Start Game</button>
       <img src="assets/logo.svg" alt="" srcset="" />
     </div>
 
@@ -58,7 +58,12 @@
 
   <script>
         const arrow = document.querySelector('.arrow-circle');
+        const startButton = document.getElementById('startButton')
 
+        startButton.addEventListener('click', () =>{
+            window.location.assign('game.html')
+        })
+        
         window.addEventListener('scroll', () => {
             console.log(window)
             if (window.scrollY > 1) {

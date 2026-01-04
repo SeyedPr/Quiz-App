@@ -1,0 +1,167 @@
+body {
+    max-width: 1300px;
+}
+
+.selectCateg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  gap: 20px;
+  display: none;
+}
+
+
+.selectCateg button {
+    width: 380px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #bb47df;
+    border: none;
+    transition: all 0.2s ease-in;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+
+.selectCateg button:hover {
+    cursor: pointer;
+    background-color: #bc47df8a;
+}
+
+
+.selectCateg h1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ceb6e2;
+}
+
+
+.category {
+    background-color: #1d1d1d80;
+    height: 300px;
+    display: flex;
+    border-radius: 20px;
+    width: 400px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-category {
+    opacity: 0.5;
+    width: 380px;
+    height: 50px;
+    background-color: #262626;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 17px 15px;
+    color: #ffffff;
+
+    transition: 
+      opacity 0.2s ease,
+      transform 0.25s ease,
+      background-color 0.25s ease,
+      border 0.25s ease;
+}
+
+.selectedCategory {
+    opacity: 1;
+    background-color: #2626263a;
+    border: 1px solid #7138a0;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.row-category:hover {
+    opacity: 1;
+    background-color: #2626263a;
+    border: 1px solid #7138a0;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* select level css */
+
+
+
+.selectLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  gap: 20px;
+}
+
+
+.selectLevel button {
+    width: 380px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #bb47df;
+    border: none;
+    transition: all 0.2s ease-in;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+
+.selectLevel button:hover {
+    cursor: pointer;
+    background-color: #bc47df8a;
+}
+
+
+.selectLevel h1 {
+  font-size: 15px;
+  text-align: center;
+  color: #ceb6e2;
+}
+
+
+.level {
+    background-color: #1d1d1d80;
+    height: 250px;
+    display: flex;
+    border-radius: 20px;
+    width: 400px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-level {
+    opacity: 0.5;
+    width: 380px;
+    height: 50px;
+    background-color: #262626;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 17px 15px;
+    color: #ffffff;
+
+    transition: 
+      opacity 0.2s ease,
+      transform 0.25s ease,
+      background-color 0.25s ease,
+      border 0.25s ease;
+}
+
+.selectedCategory {
+    opacity: 1;
+    background-color: #2626263a;
+    border: 1px solid #7138a0;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.row-level:hover {
+    opacity: 1;
+    background-color: #2626263a;
+    border: 1px solid #7138a0;
+    cursor: pointer;
+    transform: scale(1.02);
+}
