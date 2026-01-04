@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #141414;
+    background-image: url('../assets/background.svg');
+    background-repeat: repeat-x;
+    background-size: auto 900px;
+    background-position: auto center;
+
+    font-family: 'Urbanist-ExtraBold', sans-serif;
+    color: #ffffff;
+
+    animation: backgroundAnimation 5s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}

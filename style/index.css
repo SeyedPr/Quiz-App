@@ -1,0 +1,117 @@
+.navbar {
+    background-color: #1e1d1d;
+    width: 400px;
+    height: 60px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    list-style-type: none;
+    backdrop-filter: blur(50px);
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0 auto;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;    
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.navbar li {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.navbar li img {
+    width: 32px;
+    margin-left: 25px;
+}
+
+.navbar ul:hover li {
+    filter: blur(1px);
+    opacity: 0.5;
+}
+
+.navbar ul li:hover {
+    filter: blur(0);
+    opacity: 1;
+    cursor: pointer;
+    color: rgb(197, 144, 247);
+}
+
+.hero {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+
+.hero h1 {
+    color: rgb(162, 83, 236);
+    font-size: 40px;
+    animation: myAnimation 2s ease-in-out infinite alternate;
+}
+
+.hero h3 {
+    color: rgb(197, 144, 247);
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.hero img {
+    position: absolute;
+    margin-left: 500px;
+    width: 250px;
+    margin-top: -180px;
+    animation: logoanimation 2s ease-in-out infinite alternate;
+    filter: blur(100%);
+
+
+}
+
+.hero button {
+    border: none; 
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgb(146, 24, 202);
+    color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Urbanist-Medium', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    
+}
+
+.hero button:hover {
+    backdrop-filter: blur(100px);
+    cursor: pointer;
+    opacity: 0.3;
+    color: #262626;
+    transform: scale(1.1);
+}
+
+@keyframes myAnimation {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+
+@keyframes logoanimation {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(0.9);
+
+  }
+}
