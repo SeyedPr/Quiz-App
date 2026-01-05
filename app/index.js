@@ -10,7 +10,7 @@ const level = document.querySelector('.selectLevel')
 const spinerLoader = document.querySelector('.page-loader')
 
 
-let categoryType = 0;
+let categoryType = -1;
 let levelType = '';
 export const toggleLoader = (state) => {
     if (state == true) {
@@ -34,7 +34,7 @@ const handlerCategory = (key) => {
 }
 
 const finishSelectCategory = () => {
-    if (categoryType == 0) {
+    if (categoryType == -1) {
         alert("please select type")
         return 
     }

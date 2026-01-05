@@ -263,11 +263,17 @@ body {
   background-color: #5e56d3;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
-
+  transform-origin: left center;
+  transform: scaleX(1);
+  transition: transform 1s linear;
   color: #ffffff;
   transition: opacity 0.2s ease, transform 0.25s ease,
-    background-color 0.25s ease, border 0.25s ease;
+    background-color 0.25s ease, border 0.25s ease,
+    width 0.25s ease, border 0.25s ease;
+
 }
+
+
 
 
 .page-loader{
