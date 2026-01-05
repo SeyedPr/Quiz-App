@@ -28,7 +28,7 @@
 
     <div class="top-players" id="top">
       <h2>Top players</h2>
-      <div class="row-player">
+      <!-- <div class="row-player">
         <span>1</span>
         <p>Amir Hosseini</p>
         <span>5 Score</span>
@@ -44,7 +44,7 @@
         <span>1</span>
         <p>Amir Hosseini</p>
         <span>2 Score</span>
-      </div>
+      </div> -->
     </div>
 
     <div class="arrow-circle">
@@ -57,6 +57,29 @@
   </body>
 
   <script>
+    
+      let topScore = JSON.parse(localStorage.getItem('topScore')) || []
+
+        const topContainer = document.getElementById('top')
+
+        window.addEventListener('load', () => {
+            const topScore = JSON.parse(localStorage.getItem('topScore')) || []
+
+            topScore.forEach((player, index) => {
+                const row = document.createElement('div')
+                row.classList.add('row-player')
+
+                row.innerHTML = `
+                    <span>${index + 1}</span>
+                    <p>${player.username}</p>
+                    <span>${player.myScore} Score</span>
+                `
+
+                topContainer.appendChild(row)
+            })
+        })
+
+
         const arrow = document.querySelector('.arrow-circle');
         const startButton = document.getElementById('startButton')
 
@@ -65,7 +88,6 @@
         })
         
         window.addEventListener('scroll', () => {
-            console.log(window)
             if (window.scrollY > 1) {
             arrow.classList.add('show');
             } else {

@@ -1,5 +1,6 @@
 import { toggleLoader } from './index.js';
 import { formatData } from './helpers.js';
+import { endGame } from './end.js';
 
 const anwser_category = document.querySelector('.anwser')
 const anwserBox = document.querySelectorAll('.anwser-test')
@@ -7,7 +8,7 @@ const questionTitle = document.querySelector('.question')
 const scoreTitle = document.querySelector('.score')
 const progressIndex = document.querySelector('.progress')
 const nextButton = document.getElementById('next-button')
-
+const finishButton = document.getElementById('finish-button')
 
 const myTypes = [25, 21, 22, 9]
 let formatedData;
@@ -17,7 +18,6 @@ let correntIndex = 0;
 let isAccess = true;
 let timer = null
 let timeLeft = 60
-
 
 export const startGame = async (difficulty, type) => {
     const difficultyLevel = difficulty.toLowerCase() || 'medium'
@@ -112,25 +112,26 @@ const handlerAnwser = (event, index) => {
         anwserBox[correntIndex].style.opacity = 1
     }
     isAccess = false
-
 }
 
 const nextQuestion = () => {
-    questionIndex = questionIndex + 1
     if (questionIndex < formatedData.length - 1) {
+        questionIndex++
         showQuestion()
     } else {
-        endGame(score)
+        localStorage.setItem('score', score)
+        endGame()
     }
-};
-
-const endGame = (score) => {
-    anwser_category.style.display = 'none'
-    toggleLoader(true)
 }
 
+
+const finishQuestion = () => {
+    localStorage.setItem('score', score)
+        endGame()
+}
 anwserBox.forEach((button, index) => {
     button.addEventListener('click', (event) => handlerAnwser(event, index))
 })
 
 nextButton.addEventListener('click', nextQuestion)
+finishButton.addEventListener('click', finishQuestion)
